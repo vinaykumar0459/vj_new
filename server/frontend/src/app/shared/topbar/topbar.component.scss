@@ -1,0 +1,84 @@
+.topnavbar_main {
+    background: #f0f0f0;
+    .topnav_left {
+        padding: 9px 0px; 
+        p {
+            color: #888;
+            margin-bottom: 0px;
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+    .navbar_main {
+        nav {
+            padding: 0px;
+            ul {
+                li {
+                    a {
+                        padding: 8px 10px;
+                        color: #888;
+                        font-size: 13px;
+                        line-height: 18px;
+                        select {
+                            border: 0px;
+                            background: transparent;
+                            font-size: 14px;
+                            color: #000;
+                        }
+                        select:focus {
+                            outline: none;
+                        }
+                        .mywishlist_count {
+                            background: rgb(190, 162, 117);
+                            padding: 0px 4px;
+                            border-radius: 3px;
+                            color: #fff;
+                        }
+                    }
+                    a.active {
+                        color: rgb(190, 162, 117);
+                        background-color: transparent;
+                    }
+                }
+                li.mybag_li {
+                    background-color: #fff;
+                    border-bottom: 3px solid  rgb(190, 162, 117);
+                    a {
+                        color: rgb(190, 162, 117);
+                    }
+                }
+                li.highlight_li {
+                    a {
+                        color: rgb(190, 162, 117);
+                    }
+                }
+                li.dropdown {
+                    .dropdown-hover {
+                        display: none;
+                        position: absolute;
+                        min-width: 160px;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                        background-color: #fff;
+                        a {
+                            padding: 6px 15px;
+                            color: #666;
+                        }
+                        a:focus, a:active {
+                            background-color: #f8f9fa;
+                            outline: none;
+                        }
+                        a.active {
+                            color: rgb(190, 162, 117);
+                        }
+                    }
+                }
+                li.dropdown:hover {
+                    .dropdown-hover {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+<div class="row topnavbar_main">
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-5 topnav_left">
+        <p>Your Wedding Adventure Starts here!</p>
+      </div>
+      <div class="col col-sm-7 navbar_main">
+        <nav class="navbar navbar-expand-md">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/my-wishlist" routerLinkActive="active">
+                  <span class="mywishlist_count">0</span>
+                  My Wishlist</a>
+              </li>
+              <li class="nav-item highlight_li">
+                <a class="nav-link" routerLink="/we-are-hiring" routerLinkActive="active">We are Hiring</a>
+              </li> 
+              <li class="nav-item dropdown highlight_li">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" routerLink="/my-account" routerLinkActive="active">Wedding Planning</a>
+                <div class="dropdown-hover">
+                  <a class="dropdown-item" routerLink="/my-account/activity" routerLinkActive="active">Wedding Activity</a>
+                  <a class="dropdown-item" routerLink="/my-account/profile" routerLinkActive="active">My Profile</a>
+                  <a class="dropdown-item" routerLink="/my-account/messages" routerLinkActive="active">My Inbox</a>
+                  <a class="dropdown-item" routerLink="/my-account/friends" routerLinkActive="active">Best Friends</a>
+                  <a class="dropdown-item" routerLink="/my-account/groups" routerLinkActive="active">Friends Groups</a>
+                  <a class="dropdown-item" routerLink="/my-account/forums" routerLinkActive="active">Ideas and Discussion</a>
+                  <a class="dropdown-item" routerLink="/my-account/invite-anyone" routerLinkActive="active">Send Invites</a>
+                  <a class="dropdown-item" routerLink="/my-account/settings" routerLinkActive="active">Settings</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <select [(ngModel)]="currency" name="Currency"> 
+                      <option *ngFor="let currency of currencies" [ngValue]="currency">{{currency}}</option>
+                    </select>
+                </a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">Logout</a>
+              </li>  
+              <li class="nav-item mybag_li">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  My Bag <span class="mybag_count">(0)</span>
+                </a>
+              </li>  
+            </ul>
+          </div>  
+        </nav>
+      </div>
+    </div>
+
+  </div>
+</div>

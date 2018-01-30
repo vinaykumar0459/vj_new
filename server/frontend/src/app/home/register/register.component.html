@@ -1,0 +1,112 @@
+<div class="row login-main">
+  <div class="container">
+    <div class="login-box-col col-sm-12 col-12">
+        <form id="signupform" #f="ngForm" (ngSubmit)="signupform(User)" novalidate>
+        <div class="row login-block">
+          <div class="w-100 register_form_main">
+            <div class="account_details_main">
+              <div class="accout_details_head">
+                <h2>Account Details</h2>
+              </div>
+              <div class="row username_row">
+                <div class="col col-sm-6">
+                  <div class="form-group">
+                    <label for="usr">Username*</label>
+                    <input type="text" class="form-control" name="username" [(ngModel)]="User.username"  #userName="ngModel" required>
+                  </div>
+                </div>
+                <div class="col col-sm-6">
+                  <div class="form-group">
+                    <label for="usr">Email ID*</label>
+                    <input type="text" class="form-control" name="email" [(ngModel)]="User.email"  #Email="ngModel" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row username_row">
+                <div class="col col-sm-6">
+                  <div class="form-group">
+                    <label for="usr">Create Password*</label>
+                    <input type="password" class="form-control" name="password" [(ngModel)]="User.password"  #Password="ngModel" required>
+                  </div>
+                </div>
+                <div class="col col-sm-6">
+                  <div class="form-group">
+                    <label for="usr">Confirm Password*</label>
+                    <input type="password" class="form-control" name="cpassword" [(ngModel)]="User.cpassword"  #Cpassword="ngModel" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="account_details_main">
+                <div class="accout_details_head">
+                  <h2>Profile Details</h2>
+                </div>
+                <div class="row username_row">
+                  <div class="col col-sm-6">
+                    <div class="form-group">
+                      <label for="usr">Name*</label>
+                      <input type="text" class="form-control" name="name" [(ngModel)]="User.name"  #Name="ngModel" required>
+                    </div>
+                  </div>
+                  <div class="col col-sm-6">
+                    <div class="form-group">
+                      <label for="usr">Date of Birth*</label>
+                      <input type="date" class="form-control" name="dateofbirth" [(ngModel)]="User.dateofbirth"  #Dateofbirth="ngModel" required>
+                      <!-- <p-calendar [(ngModel)]="dateofbirth" name="date" [monthNavigator]="true" [yearNavigator]="true" yearRange="1920:2020" [showIcon]="true"></p-calendar> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="row username_row">
+                  <div class="col col-sm-6">
+                    <div class="form-group">
+                      <label for="usr">Mobile*</label>
+                      <input type="text" class="form-control" name="mobile" [(ngModel)]="User.mobile"  #Mobile="ngModel" required>
+                    </div>
+                  </div>
+                  <div class="col col-sm-6">
+                    <div class="form-group">
+                      <div>
+                        <label for="gender">Gender*</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input type="radio" name="gender" value="male" [(ngModel)]="User.gender" #gender="ngModel" required>Male
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input type="radio" name="gender" value="female" [(ngModel)]="User.gender" #gender="ngModel" required>Female
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row username_row">
+                  <div class="col col-sm-6">
+                    <div class="form-group">
+                      <label for="usr">Occupation*</label>
+                      <input type="text" class="form-control" name="occupation" [(ngModel)]="User.occupation"  #Occupation="ngModel" required>
+                    </div>
+                  </div>
+                  <div class="col col-sm-6">
+                    <div class="form-group">
+                      <label for="usr">Wedding Date</label>
+                      <input type="date" class="form-control" name="weddingdate" [(ngModel)]="User.weddingdate"  #Weddingdate="ngModel" required>
+                      <!-- <p-calendar [(ngModel)]="weddingdate" name="date" [minDate]="minDate" [monthNavigator]="true" [yearNavigator]="true" [showIcon]="true"></p-calendar> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="row username_row">
+                    <div class="col-sm-6 offset-sm-6">
+                      <div class="register_submit_btn pull-right">
+                        <button type="submit" class="btn">Complete Signup</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
